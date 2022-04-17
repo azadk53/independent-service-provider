@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Sell",
+        "price": "€ 50000-250000",
+        "img": "../src/images/services/sell.png",
+        "description": "We are connoisseurs of the art of maximizing the equity of your home. We’ll advise you on any improvements, home repairs or even professional staging that best prepare your home to return its maximum value. Leading Edge agents know how to present your home so it will sell quickly and at the right price."
+    },
+    {
+        "id": 2,
+        "name": "Buy",
+        "price": "€ 70000-250000",
+        "img": "../src/images/services/invest.jpg",
+        "description": "Once your offer has been accepted, Our agents can connect you with skilled home inspectors, real estate attorneys, mortgage lenders, insurance agents and any other home-related vendors that might be needed. Your agent will manage every aspect of the transaction and will help you find resolutions to inevitable challenges."
+    },
+    {
+        "id": 3,
+        "name": "Investment",
+        "price": "€ 20000 up",
+        "img": "../src/images/services/invest.jpg",
+        "description": "For over two decades, Home Advisor has been a force in the Greater Boston real estate market. We’ve grown to become a leading full-service real estate company offering residential real estate and global relocation services to buyers and sellers in all of Hamburg ,Berlin and Munich. You can invest your money and  make huge profit."
+    }
+]
