@@ -1,0 +1,12 @@
+.footer {
+    text-align: center;
+    margin-top: 80px;
+    background-color: #0a0826;
+    color: #ffffff;
+    padding: 30px 0;
+    height: 150px;
+}
+
+footer small {
+    color: #d9dbe1;
+}
