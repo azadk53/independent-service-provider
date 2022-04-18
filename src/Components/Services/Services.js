@@ -9,10 +9,15 @@ const Services = () => {
             .then(data => setServices(data))
     }, [])
     return (
-        <div className='d-flex'>
-            {
-                services.map(service => <Service key={service.id} service={service}></Service>)
-            }
+
+        <div>
+            <h1 className='text-center mt-4'>Home Advisor Services</h1>
+            <div className='d-flex mx-auto'>
+
+                {
+                    services.map(service => <Service key={service.id} service={service}></Service>)
+                }
+            </div>
         </div>
     );
 };
