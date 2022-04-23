@@ -4,6 +4,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -82,7 +83,7 @@ const Login = () => {
             {errorElement}
             <p className='w-50 d-block mx-auto mt-2'>New to Genius Car? <Link to="/register" className='text-primary  mx-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
             <p className='w-50 d-block mx-auto mt-2'>Forget Password? <button className='btn btn-link text-primary ps-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
-
+            <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>
     );
