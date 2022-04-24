@@ -1,3 +1,16 @@
+# Project name: Home Realtor
+## Project-link
+
+
+
+## Project description
+
+- this project is about to realstate business.
+- In home page it has navbar, banner, company's services, customers review and footer.
+- For getting services it has also register and login system.
+- You can book an appointment after login in our system.
+- In this project react-router, bootstrap, google-firebase, react-firebase-hook have been used.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

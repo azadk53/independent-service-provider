@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { Button, Form, Toast, ToastContainer } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -52,18 +54,18 @@ const Login = () => {
 
         if (email) {
             await sendPasswordResetEmail(email);
-            Toast('Sent email');
+            toast('Sent email');
         }
         else {
-            Toast('please enter your email address');
+            toast('please enter your email address');
         }
     }
 
     return (
-        <div>
+        <div className='container  w-50 mx-auto'>
             <h2 className=' text-center mt-2'>Please Login</h2>
             <Form className='mt-4 w-50 mx-auto' onSubmit={handleSubmit}>
-                <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicEmail">
+                <Form.Group className="mb-3 " controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" onChange={handleEmailChange} required />
                     <Form.Text className="text-muted">
@@ -71,7 +73,7 @@ const Login = () => {
                     </Form.Text>
                 </Form.Group>
 
-                <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicPassword">
+                <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" onChange={handlePasswordChange} />
                 </Form.Group>
@@ -81,8 +83,8 @@ const Login = () => {
                 </Button>
             </Form>
             {errorElement}
-            <p className='w-50 d-block mx-auto mt-2'>New to Genius Car? <Link to="/register" className='text-primary  mx-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
-            <p className='w-50 d-block mx-auto mt-2'>Forget Password? <button className='btn btn-link text-primary ps-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+            <p className='text-center mt-2'>New to Genius Car? <Link to="/register" className='text-primary  ps-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
+            <p className='text-center mt-2'>Forget Password? <button className='btn btn-link text-primary ps-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
             <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>
