@@ -25,10 +25,6 @@ const Register = () => {
         return <Loading></Loading>
     }
 
-    if (user) {
-        console.log('user', user);
-    }
-
     const handleRegister = async (event) => {
         event.preventDefault();
         const name = event.target.name.value;

@@ -1,10 +1,11 @@
 import React from 'react';
-import Login from '../Login/Login';
+import './Checkout.css';
 
 const Checkout = () => {
     return (
-        <div>
-            <Login></Login>
+        <div className='checkout-container'>
+            <h1 className='mt-4 text-center'>Welcome to Our Home Realtor Services </h1>
+            <p className=' text-center'>You can book an appointment for any of our services.</p>
         </div>
     );
 };
