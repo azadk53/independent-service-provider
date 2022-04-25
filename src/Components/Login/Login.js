@@ -62,7 +62,7 @@ const Login = () => {
     }
 
     return (
-        <div className='container  w-50 mx-auto'>
+        <div style={{ height: '70vh' }} className='container  w-50 mx-auto'>
             <h2 className=' text-center mt-2'>Please Login</h2>
             <Form className='mt-4 w-50 mx-auto' onSubmit={handleSubmit}>
                 <Form.Group className="mb-3 " controlId="formBasicEmail">

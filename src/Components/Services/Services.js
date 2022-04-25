@@ -12,7 +12,7 @@ const Services = () => {
 
         <div>
             <h1 className='text-center mt-4'>Home Advisor Services</h1>
-            <div className='d-flex mx-auto'>
+            <div className='d-lg-flex  mx-auto'>
 
                 {
                     services.map(service => <Service key={service.id} service={service}></Service>)
