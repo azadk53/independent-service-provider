@@ -1,4 +1,4 @@
-# Project name: Home Realtor
+# Project name: Home Advisor
 ## Project-link
 Project's live link [https://realtoradvise.netlify.app/](https://realtoradvise.netlify.app/home)
 
